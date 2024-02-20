@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMark</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="caption">
+        <i class="fas fa-bookmark"></i>
+        <h2>BOOKMARKER</h2>
+      </div>
+
+      <div
+        class="form d-flex justify-content-center flex-column align-items-center"
+      >
+        <div class="form-content mt-3">
+          <p>Site Name</p>
+          <input type="text" placeholder="Bookmark Name" id="site-name" />
+        </div>
+
+        <div class="form-content">
+          <p class="mt-4">Site URL</p>
+          <input type="text" placeholder="EX : google.com" id="url-site" />
+
+          <div>
+            <p class="paragraph mt-4 text-info d-none">
+              * This Already Exists "Are You Want To Update It ?" *
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-outline-dark p-3 mt-4 rounded-pill" id="add-btn">
+        ADD BOOKMARK
+      </button>
+      <button
+        class="btn btn-outline-dark p-3 mt-4 rounded-pill"
+        id="update-btn"
+      >
+        Update
+      </button>
+
+      <button id="cancel" class="btn btn-danger p-3 mt-4 rounded-pill">Cancel</button>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="section mt-5 mb-5 form-content text-center w-75">
+        <p>Search</p>
+        <input type="text" name="" placeholder="Search" id="search" />
+      </div>
+    </div>
+    <div class="marker-items">
+      <div class="container" id="show-item"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
