@@ -1,4 +1,4 @@
-# Bookmarher
+# Bookmarker
 
 - simple bookmark to save websites by used LocalStorage
   
